@@ -7,7 +7,7 @@
 1. [Chapter 1. Getting Started with Raspberry Pi](Part1_Introduction/01_Getting_Started_with_RaspberryPi/README.md)
     * [1.1 About Raspberry Pi 3B](Part1_Introduction/01_Getting_Started_with_RaspberryPi/01_raspberry_pi_3b.md)
     * [1.2 Raspberry Pi Online Resource](Part1_Introduction/01_Getting_Started_with_RaspberryPi/02_onlineresource.md)
-    * [1.3 Install Raspbian onto a RPI 3B](Part1_Introduction/01_Getting_Started_with_RaspberryPi/03_raspbian_installation.md)
+    * [1.3 Install Raspbian onto a Raspberry Pi 3B](Part1_Introduction/01_Getting_Started_with_RaspberryPi/03_raspbian_installation.md)
     * [1.4 Locale Configuration](Part1_Introduction/01_Getting_Started_with_RaspberryPi/04_locale_configuration.md)
 2. [Chapter 2. Getting Familiar with Raspbian](Part1_Introduction/02_Getting_Familiar_with_Raspbian/README.md)
     * [2.1 Useful Packages](Part1_Introduction/02_Getting_Familiar_with_Raspbian/01_usefulpackages.md)
