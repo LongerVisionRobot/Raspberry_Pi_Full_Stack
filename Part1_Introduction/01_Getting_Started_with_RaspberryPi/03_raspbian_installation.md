@@ -20,3 +20,7 @@ There are 4 partitions in total:
 4. unallocated 24.91 GiB -- to be **USED**
 
 To make **FULL** use of the SD/TF card's storage, traditionally, you need to manually resize/enlarge **/dev/mmcblk0p2** to cover the 2nd unallocated storage 24.91G. Ever since [Raspbian Stretch](https://www.raspberrypi.org/downloads/raspbian/), you can plug out the SD/TF card directly and try to reboot your Raspberry Pi 3B without manually changing anything. Raspbian's **FIRST** booting will **automatically** resize/enlarge **/dev/mmcblk0p2** to cover the entire 2nd unallocated storage 24.91G.
+
+Before starting playing with Raspbian on Raspberry Pi, there are still two more steps to go:
+* raspi-config
+* Enable the Internet
