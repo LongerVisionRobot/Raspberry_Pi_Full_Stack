@@ -10,6 +10,7 @@
     * [1.3 Install Raspbian onto a Raspberry Pi 3B](Part1_Introduction/01_Getting_Started_with_RaspberryPi/03_raspbian_installation.md)
     * [1.4 Raspberry Pi Configuration](Part1_Introduction/01_Getting_Started_with_RaspberryPi/04_basic_configuration.md)
     * [1.5 Network Configuration](Part1_Introduction/01_Getting_Started_with_RaspberryPi/05_network_configuration.md)
+    * [1.6 Package Update & Upgrade](Part1_Introduction/01_Getting_Started_with_RaspberryPi/06_package_updateupgrade.md)
 2. [Chapter 2. Getting Familiar with Raspbian](Part1_Introduction/02_Getting_Familiar_with_Raspbian/README.md)
     * [2.1 Useful Packages](Part1_Introduction/02_Getting_Familiar_with_Raspbian/01_usefulpackages.md)
 
