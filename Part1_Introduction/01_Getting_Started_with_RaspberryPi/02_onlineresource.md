@@ -15,11 +15,13 @@
 ## 1.3.4 Raspbian: the Foundation's official supported Operating System. 
 * [Raspbian](https://www.raspberrypi.org/downloads/raspbian/)
 
-## 1.3.5 Official Forums
+## 1.3.5 Forums
 * [https://www.raspberrypi.org/forums/](https://www.raspberrypi.org/forums/)
+* [https://forum.modmypi.com/](https://forum.modmypi.com/)
 
 ## 1.3.6 Popular Ecosystem Forums
 * [Adafruit](https://forums.adafruit.com/viewforum.php?f=50)
+* [ModMyPi](https://www.modmypi.com/)
 * [ShuMeiPai NXEZ Lab](http://shumeipai.nxez.com/)
 * [ShuMeiPai LunTan](http://www.shumeipai.net/)
 

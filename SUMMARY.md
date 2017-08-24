@@ -12,7 +12,7 @@
     * [1.5 Network Configuration](Part1_Introduction/01_Getting_Started_with_RaspberryPi/05_network_configuration.md)
     * [1.6 Package Update & Upgrade](Part1_Introduction/01_Getting_Started_with_RaspberryPi/06_package_updateupgrade.md)
 2. [Chapter 2. Getting Familiar with Raspbian](Part1_Introduction/02_Getting_Familiar_with_Raspbian/README.md)
-    * [2.1 Useful Packages](Part1_Introduction/02_Getting_Familiar_with_Raspbian/01_usefulpackages.md)
+    * [2.1 Package Management](Part1_Introduction/02_Getting_Familiar_with_Raspbian/01_package_management.md)
 
 * [Part 2 - GPIO](Part2_GPIO/README.md)
 3. [Chapter 3. GPIO](Part2_GPIO/03_RaspberryPi_GPIO/README.md)

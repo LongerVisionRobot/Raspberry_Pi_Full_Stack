@@ -19,6 +19,9 @@ And, by clicking on the **Wifi** icon, it will open a list of detected **Wifi** 
 
 ![Image](./network_3_internet_listing.jpg)
 
+You will notice that Raspberry Pi 3B **ONLY** detects the 2.4G Wifi network, which can be confirmed from its [official specification](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/). Clearly, [BCM43438](http://www.cypress.com/file/298076/download) is the chip with 
+> a 2.4 GHz WLAN IEEE 802.11 b/g/n MAC/baseband/radio, Bluetooth 4.1 support, and an FM receiver.
+
 Click on your network, the **Pre Shared Key** dialog will be popped up for you to input the password, as follows:
 
 ![Image](./network_4_internet_pre_sharedkey.jpg)
@@ -42,13 +45,43 @@ again.
 As you can see, the IP address is NOW automatically allocated as **192.168.0.105**.
 
 
-## 1.5.2 Set Static IP (Strongly Suggested)
+## 1.5.2 Set Static IP (Optional but Strongly Recommended)
 
-In order to be more easily and accurately locate which device is of which IP address, without shifting to a **NEW** IP address while reconnecting to the **SAME** network, users would like to set static IPs for frequently-used devices. The file to specify a static IP for the particular device is **/etc/network/interfaces**. Let's have a look at its content by using command **cat**.
+In order to be more easily and accurately locate which device is of which IP address, without shifting to a **NEW** IP address while reconnecting to the **SAME** network, users would like to set static IPs for frequently-used devices.
 
-![Image](./network_8_interfaces.jpg)
+There are at least three ways to set up a static IP for Raspberry Pi 3B.
+
+**Router**
+
+Specifically for ther author's Cisco router, there is a place to specify **Pre-assigned DHCP IP Address**.
+
+![Image](./router_configure_1.jpg)
+
+After this **Pre-assigned DHCP IP Address** dialog is opened, we **Add Static IP**, then **Save**. Finally, we will be able to see the **Success** dialog.
+
+![Image](./router_configure_2.jpg)
+
+![Image](./router_configure_3.jpg)
+
+![Image](./router_configure_4.jpg)
+
+After the static IP configuration from within the router, we reconnect(disconnect first and then connect again) Raspberry Pi 3B to Internet, we'll be able to see the IP address has already changed accordingly.
+
+However, to think of one additional issue? If the router is rebooted for some reason, all pre-assigned IP will be forgot by the router, what are you going to do?
+
+Yes. The answer is: do some configuration on the Raspberry Pi 3B, instead of router.
 
 
-Initial Raspbian comes with an text-mode editor **nano**, which is to be used.
+**Configure /etc/dhcpcd.conf**
 
-[https://learn.adafruit.com/adafruits-raspberry-pi-lesson-3-network-setup/setting-up-wifi-with-occidentalis](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-3-network-setup/setting-up-wifi-with-occidentalis)
+Refer to **ModMyPi** online blog [How to give your Raspberry Pi a Static IP Address - UPDATE](https://www.modmypi.com/blog/how-to-give-your-raspberry-pi-a-static-ip-address-update)
+
+**Configure /etc/network/interfaces and /etc/wpa\_supplicant/wpa\_supplicant.conf**
+
+Refer to **ModMyPi** online tutorial [Tutorial - How to give your Raspberry Pi a Static IP Address](https://www.modmypi.com/blog/tutorial-how-to-give-your-raspberry-pi-a-static-ip-address)
+
+A lot more discussion can be found in Raspberry Pi Official Forum, topic title 
+[Raspberry Pi 3 Wifi Static IP](https://www.raspberrypi.org/forums/viewtopic.php?f=91&t=157250) .
+
+<!-- ![Image](./network_8_interfaces.jpg) -->
+

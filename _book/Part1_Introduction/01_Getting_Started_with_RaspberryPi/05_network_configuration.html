@@ -233,12 +233,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.3.1" data-path="../02_Getting_Familiar_with_Raspbian/01_usefulpackages.html">
+        <li class="chapter " data-level="2.3.1" data-path="../02_Getting_Familiar_with_Raspbian/01_package_management.html">
             
-                <a href="../02_Getting_Familiar_with_Raspbian/01_usefulpackages.html">
+                <a href="../02_Getting_Familiar_with_Raspbian/01_package_management.html">
             
                     
-                    2.1 Useful Packages
+                    2.1 Package Management
             
                 </a>
             
@@ -391,6 +391,10 @@
 <p><img src="network_2_internet_not_connected.jpg" alt="Image"></p>
 <p>And, by clicking on the <strong>Wifi</strong> icon, it will open a list of detected <strong>Wifi</strong> networks:</p>
 <p><img src="network_3_internet_listing.jpg" alt="Image"></p>
+<p>You will notice that Raspberry Pi 3B <strong>ONLY</strong> detects the 2.4G Wifi network, which can be confirmed from its <a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b/" target="_blank">official specification</a>. Clearly, <a href="http://www.cypress.com/file/298076/download" target="_blank">BCM43438</a> is the chip with </p>
+<blockquote>
+<p>a 2.4 GHz WLAN IEEE 802.11 b/g/n MAC/baseband/radio, Bluetooth 4.1 support, and an FM receiver.</p>
+</blockquote>
 <p>Click on your network, the <strong>Pre Shared Key</strong> dialog will be popped up for you to input the password, as follows:</p>
 <p><img src="network_4_internet_pre_sharedkey.jpg" alt="Image"></p>
 <p>After inputing the correct password to your <strong>Wifi</strong>, you will see the Internet is NOW connected:</p>
@@ -402,11 +406,26 @@
 </code></pre><p>again.</p>
 <p><img src="network_7_ifconfig.jpg" alt="Image"></p>
 <p>As you can see, the IP address is NOW automatically allocated as <strong>192.168.0.105</strong>.</p>
-<h2 id="152-set-static-ip-strongly-suggested">1.5.2 Set Static IP (Strongly Suggested)</h2>
-<p>In order to be more easily and accurately locate which device is of which IP address, without shifting to a <strong>NEW</strong> IP address while reconnecting to the <strong>SAME</strong> network, users would like to set static IPs for frequently-used devices. The file to specify a static IP for the particular device is <strong>/etc/network/interfaces</strong>. Let&apos;s have a look at its content by using command <strong>cat</strong>.</p>
-<p><img src="network_8_interfaces.jpg" alt="Image"></p>
-<p>Initial Raspbian comes with an text-mode editor <strong>nano</strong>, which is to be used.</p>
-<p><a href="https://learn.adafruit.com/adafruits-raspberry-pi-lesson-3-network-setup/setting-up-wifi-with-occidentalis" target="_blank">https://learn.adafruit.com/adafruits-raspberry-pi-lesson-3-network-setup/setting-up-wifi-with-occidentalis</a></p>
+<h2 id="152-set-static-ip-optional-but-strongly-recommended">1.5.2 Set Static IP (Optional but Strongly Recommended)</h2>
+<p>In order to be more easily and accurately locate which device is of which IP address, without shifting to a <strong>NEW</strong> IP address while reconnecting to the <strong>SAME</strong> network, users would like to set static IPs for frequently-used devices.</p>
+<p>There are at least three ways to set up a static IP for Raspberry Pi 3B.</p>
+<p><strong>Router</strong></p>
+<p>Specifically for ther author&apos;s Cisco router, there is a place to specify <strong>Pre-assigned DHCP IP Address</strong>.</p>
+<p><img src="router_configure_1.jpg" alt="Image"></p>
+<p>After this <strong>Pre-assigned DHCP IP Address</strong> dialog is opened, we <strong>Add Static IP</strong>, then <strong>Save</strong>. Finally, we will be able to see the <strong>Success</strong> dialog.</p>
+<p><img src="router_configure_2.jpg" alt="Image"></p>
+<p><img src="router_configure_3.jpg" alt="Image"></p>
+<p><img src="router_configure_4.jpg" alt="Image"></p>
+<p>After the static IP configuration from within the router, we reconnect(disconnect first and then connect again) Raspberry Pi 3B to Internet, we&apos;ll be able to see the IP address has already changed accordingly.</p>
+<p>However, to think of one additional issue? If the router is rebooted for some reason, all pre-assigned IP will be forgot by the router, what are you going to do?</p>
+<p>Yes. The answer is: do some configuration on the Raspberry Pi 3B, instead of router.</p>
+<p><strong>Configure /etc/dhcpcd.conf</strong></p>
+<p>Refer to <strong>ModMyPi</strong> online blog <a href="https://www.modmypi.com/blog/how-to-give-your-raspberry-pi-a-static-ip-address-update" target="_blank">How to give your Raspberry Pi a Static IP Address - UPDATE</a></p>
+<p><strong>Configure /etc/network/interfaces and /etc/wpa_supplicant/wpa_supplicant.conf</strong></p>
+<p>Refer to <strong>ModMyPi</strong> online tutorial <a href="https://www.modmypi.com/blog/tutorial-how-to-give-your-raspberry-pi-a-static-ip-address" target="_blank">Tutorial - How to give your Raspberry Pi a Static IP Address</a></p>
+<p>A lot more discussion can be found in Raspberry Pi Official Forum, topic title 
+<a href="https://www.raspberrypi.org/forums/viewtopic.php?f=91&amp;t=157250" target="_blank">Raspberry Pi 3 Wifi Static IP</a> .</p>
+<!-- ![Image](./network_8_interfaces.jpg) -->
 
                                 
                                 </section>
@@ -450,7 +469,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.5 Network Configuration","level":"2.2.5","depth":2,"next":{"title":"1.6 Package Update & Upgrade","level":"2.2.6","depth":2,"path":"Part1_Introduction/01_Getting_Started_with_RaspberryPi/06_package_updateupgrade.md","ref":"Part1_Introduction/01_Getting_Started_with_RaspberryPi/06_package_updateupgrade.md","articles":[]},"previous":{"title":"1.4 Raspberry Pi Configuration","level":"2.2.4","depth":2,"path":"Part1_Introduction/01_Getting_Started_with_RaspberryPi/04_basic_configuration.md","ref":"Part1_Introduction/01_Getting_Started_with_RaspberryPi/04_basic_configuration.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Part1_Introduction/01_Getting_Started_with_RaspberryPi/05_network_configuration.md","mtime":"2017-08-24T00:36:23.868Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-08-24T07:37:24.389Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1.5 Network Configuration","level":"2.2.5","depth":2,"next":{"title":"1.6 Package Update & Upgrade","level":"2.2.6","depth":2,"path":"Part1_Introduction/01_Getting_Started_with_RaspberryPi/06_package_updateupgrade.md","ref":"Part1_Introduction/01_Getting_Started_with_RaspberryPi/06_package_updateupgrade.md","articles":[]},"previous":{"title":"1.4 Raspberry Pi Configuration","level":"2.2.4","depth":2,"path":"Part1_Introduction/01_Getting_Started_with_RaspberryPi/04_basic_configuration.md","ref":"Part1_Introduction/01_Getting_Started_with_RaspberryPi/04_basic_configuration.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Part1_Introduction/01_Getting_Started_with_RaspberryPi/05_network_configuration.md","mtime":"2017-08-24T10:48:33.981Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-08-24T10:48:39.356Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -458,10 +477,6 @@
         
     <script src="../../gitbook/gitbook.js"></script>
     <script src="../../gitbook/theme.js"></script>
-    
-        
-        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>

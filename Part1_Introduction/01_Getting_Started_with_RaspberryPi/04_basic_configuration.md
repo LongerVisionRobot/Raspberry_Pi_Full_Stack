@@ -32,7 +32,7 @@ From **NOW** on, we are going to change **Locale**, **Timezone**, **Keyboard Lay
 
 ![Image](./raspi-config_4_localisation_locale_gb_off.jpg)
 
-Since the author is at Vancouver, Canada, North America, while writing [Raspberry Pi Full Stack](https://longervision.gitbooks.io/raspberry-pi-full-stack), we need to make sure  **en_US.UTF-8 UTF-8** is enabled, to take the place of **en_GB.UTF-8 UTF-8**, which is supposed to be ticked **OFF** instead.
+Since the author is at Vancouver, Canada, North America, while writing [Raspberry Pi Full Stack](https://longervision.gitbooks.io/raspberry-pi-full-stack), we need to make sure  **en\_US.UTF-8 UTF-8** is enabled, to take the place of **en\_GB.UTF-8 UTF-8**, which is supposed to be ticked **OFF** instead.
 
 ![Image](./raspi-config_4_localisation_locale_us_on.jpg)
 
