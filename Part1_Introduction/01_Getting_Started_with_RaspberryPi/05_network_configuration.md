@@ -76,9 +76,52 @@ Yes. The answer is: do some configuration on the Raspberry Pi 3B, instead of rou
 
 Refer to **ModMyPi** online blog [How to give your Raspberry Pi a Static IP Address - UPDATE](https://www.modmypi.com/blog/how-to-give-your-raspberry-pi-a-static-ip-address-update)
 
+**/etc/dhcpcd.conf** is supposed to be configured as:
+```
+interface eth0
+
+static ip_address=192.168.0.10/24
+static routers=192.168.0.1
+static domain_name_servers=192.168.0.1
+
+interface wlan0
+
+static ip_address=192.168.0.200/24
+static routers=192.168.0.1
+static domain_name_servers=192.168.0.1
+```
+
+
 **Configure /etc/network/interfaces and /etc/wpa\_supplicant/wpa\_supplicant.conf**
 
 Refer to **ModMyPi** online tutorial [Tutorial - How to give your Raspberry Pi a Static IP Address](https://www.modmypi.com/blog/tutorial-how-to-give-your-raspberry-pi-a-static-ip-address)
+
+For **/etc/network/interfaces**, the following snippet of code is to be added at the bottom:
+```
+auto lo
+
+iface lo inet loopback
+iface eth0 inet dhcp
+
+allow-hotplug wlan0
+iface wlan0 inet manual
+wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+iface default inet dhcp
+```
+
+For **/etc/wpa\_supplicant/wpa\_supplicant.conf**, the default network is needed to configure as follows:
+```
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=CA
+
+network={
+    ssid="Wifi Network SSID"
+    psk="Password Phrase"
+    key_mgmt=WPA-PSK
+}
+```
+respectively.
 
 A lot more discussion can be found in Raspberry Pi Official Forum, topic title 
 [Raspberry Pi 3 Wifi Static IP](https://www.raspberrypi.org/forums/viewtopic.php?f=91&t=157250) .
