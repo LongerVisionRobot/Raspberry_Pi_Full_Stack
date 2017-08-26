@@ -51,7 +51,7 @@ In order to be more easily and accurately locate which device is of which IP add
 
 There are at least three ways to set up a static IP for Raspberry Pi 3B.
 
-**Router**
+**I. Router**
 
 Specifically for ther author's Cisco router, there is a place to specify **Pre-assigned DHCP IP Address**.
 
@@ -72,41 +72,42 @@ However, to think of one additional issue? If the router is rebooted for some re
 Yes. The answer is: do some configuration on the Raspberry Pi 3B, instead of router.
 
 
-**Configure /etc/dhcpcd.conf**
+**II. Configure /etc/dhcpcd.conf**
 
 Refer to **ModMyPi** online blog [How to give your Raspberry Pi a Static IP Address - UPDATE](https://www.modmypi.com/blog/how-to-give-your-raspberry-pi-a-static-ip-address-update)
 
 **/etc/dhcpcd.conf** is supposed to be configured as:
 ```
 interface eth0
-
-static ip_address=192.168.0.10/24
+static ip_address=192.168.0.31/24
 static routers=192.168.0.1
-static domain_name_servers=192.168.0.1
+static domain_name_servers=192.168.0.1 8.8.8.8
 
 interface wlan0
-
-static ip_address=192.168.0.200/24
+static ip_address=192.168.0.30/24
 static routers=192.168.0.1
-static domain_name_servers=192.168.0.1
+static domain_name_servers=192.168.0.1 8.8.8.8
 ```
 
 
-**Configure /etc/network/interfaces and /etc/wpa\_supplicant/wpa\_supplicant.conf**
+**III. Configure /etc/network/interfaces and /etc/wpa\_supplicant/wpa\_supplicant.conf**
 
 Refer to **ModMyPi** online tutorial [Tutorial - How to give your Raspberry Pi a Static IP Address](https://www.modmypi.com/blog/tutorial-how-to-give-your-raspberry-pi-a-static-ip-address)
 
 For **/etc/network/interfaces**, the following snippet of code is to be added at the bottom:
 ```
-auto lo
-
-iface lo inet loopback
-iface eth0 inet dhcp
+auto eth0
+iface eth0 inet static
+    address 192.168.0.31
+    netmask 255.255.255.0
+    gateway 192.168.0.1
 
 allow-hotplug wlan0
-iface wlan0 inet manual
-wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
-iface default inet dhcp
+iface wlan0 inet static
+    address 192.168.0.30
+    netmask 255.255.255.0
+    gateway 192.168.0.1
+wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 ```
 
 For **/etc/wpa\_supplicant/wpa\_supplicant.conf**, the default network is needed to configure as follows:
@@ -124,7 +125,21 @@ network={
 respectively.
 
 A lot more discussion can be found in Raspberry Pi Official Forum, topic title 
-[Raspberry Pi 3 Wifi Static IP](https://www.raspberrypi.org/forums/viewtopic.php?f=91&t=157250) .
+[Raspberry Pi 3 Wifi Static IP](https://www.raspberrypi.org/forums/viewtopic.php?f=91&t=157250).
 
-<!-- ![Image](./network_8_interfaces.jpg) -->
+Here in our case, **/etc/network/interfaces** and **/etc/wpa\_supplicant/wpa\_supplicant.conf** are modified accordingly, while **/etc/dhcpcd.conf** is left as it is.
 
+
+After the network is configured, ```ifconfig``` brings a **NEW** IP address: **192.168.0.30**.
+
+![Image](./network_8_ifconfig.jpg)
+
+
+**What's WEIRD**
+
+**Two weird things** are:
+1. If **/etc/dhcpcd.conf** is configured, **Raspberry Pi 3B** with **Raspbian Stretch** **CANNOT** connect to the Internet any longer.
+
+2. If **/etc/network/interfaces** and **/etc/wpa\_supplicant/wpa\_supplicant.conf** are configured, **Raspberry Pi 3B** with **Raspbian Stretch** is **ABLE** to connect to the Internet, but with the top right corner **Wifi sign** as **Unconnected** or **Disconnected**:
+
+![Image](./network_9_ping_unconnected.jpg)

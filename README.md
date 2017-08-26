@@ -1,6 +1,6 @@
 # Preface
 
-**Raspberry Pi Full Stack** is an open source book entirely written by [NanJing Longer Vision Robot Technology Ltd.](http://www.longervisionrobot.com). In this book, over 20 examples are to be discussed for the Raspberry Pi applications. You will get familiar with:
+[**Raspberry Pi Full Stack**](https://longervision.gitbooks.io/raspberry-pi-full-stack/) is an open source book entirely written by [NanJing Longer Vision Robot Technology Ltd.](http://www.longervisionrobot.com). In this book, over 20 examples are to be discussed for the Raspberry Pi applications. You will get familiar with:
 
 * Basic concepts on what Raspberry Pi is
 * How to install the operating system **Raspbian** onto an Raspberry Pi
