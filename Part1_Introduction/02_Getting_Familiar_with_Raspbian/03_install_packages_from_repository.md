@@ -11,7 +11,14 @@ sudo apt install libtool autoconf automake cmake cmake-curses-gui
 ![Image](./packages_compilation.jpg)
 
 
-## 2.3.2 Some Python Packages
+## 2.3.2 Version Control Packages
+
+```
+sudo apt install git git-core subversion
+```
+
+
+## 2.3.3 Some Python Packages
 
 
 Default python on Raspbian is of version 2. Clearly, the symbolic link **/usr/bin/python** is linked to **/usr/bin/python2.7**. We need to manually change the symbolic link to **/usr/bin/python3**, which is another symbolic link to **/usr/bin/python3.5**. Please refer to:

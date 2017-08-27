@@ -35,6 +35,12 @@ And finally, we can open the file **.vimrc** by **vim** again, and you will be a
 
 Throughout [Raspberry Pi Full Stack](https://longervision.gitbooks.io/raspberry-pi-full-stack/), for text-mode editing, we use **vim** instead of **nano**.
 
+## 2.1.3 gedit
+
+**gedit**, another editor but in graphic-mode, is strongly recommended to install:
+
+```sudo apt install gedit```.
+
 ## 2.1.3 Synaptic
 
 Synaptic is a GUI based application to easily manage packages. We **FIRST** install it and have a look at what **Synaptic** is?
