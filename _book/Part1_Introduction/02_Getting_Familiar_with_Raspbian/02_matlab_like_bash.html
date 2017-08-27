@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Chapter 2. Getting Familiar with Raspbian · GitBook</title>
+        <title>2.2 Matlab Like Bash · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="01_package_management.html" />
+    <link rel="next" href="03_install_packages_from_repository.html" />
     
     
-    <link rel="prev" href="../01_Getting_Started_with_RaspberryPi/06_package_updateupgrade.html" />
+    <link rel="prev" href="01_package_management.html" />
     
 
     </head>
@@ -219,7 +219,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.3" data-path="./">
+        <li class="chapter " data-level="2.3" data-path="./">
             
                 <a href="./">
             
@@ -246,7 +246,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.2" data-path="02_matlab_like_bash.html">
+        <li class="chapter active" data-level="2.3.2" data-path="02_matlab_like_bash.html">
             
                 <a href="02_matlab_like_bash.html">
             
@@ -417,7 +417,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >Chapter 2. Getting Familiar with Raspbian</a>
+        <a href="../.." >2.2 Matlab Like Bash</a>
     </h1>
 </div>
 
@@ -432,18 +432,26 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="chapter-2---getting-familiar-with-raspbian">Chapter 2 - Getting Familiar with Raspbian</h1>
-<p>Cited from <a href="https://www.raspbian.org/" target="_blank">Raspbian Official Website</a>, </p>
-<blockquote>
-<p>Raspbian is a free operating system based on Debian optimized for the Raspberry Pi hardware. </p>
-</blockquote>
-<p>Namely, <strong>Raspbian</strong> is a Linux distribution specifically for Raspberry Pi.</p>
-<p>To learn more about <strong>Linux</strong>, please refer to other courses of <a href="http://www.longervisionrobot.com" target="_blank">NanJing Longer Vision Robot Technology Ltd.</a>:</p>
-<ul>
-<li><a href="http://www.longervisionrobot.com/en/courses/linux-introduction.html" target="_blank">Linux Introduction</a></li>
-<li><a href="http://www.longervisionrobot.com/en/courses/linux-kernel.html" target="_blank">Linux Kernel</a></li>
-<li><a href="http://www.longervisionrobot.com/en/courses/linux-lfs.html" target="_blank">Linux from Scratch</a></li>
-</ul>
+                                <h1 id="22-matlab-like-bash">2.2 Matlab Like Bash</h1>
+<p><strong>First of all</strong>, make sure you are under the <strong>HOME</strong> directory, and then create a hidden file named <strong>.inputrc</strong>.</p>
+<p><img src="inputrc_create.jpg" alt="Image"></p>
+<p>Then, we modify the file <strong>.inputrc</strong> by <strong>vim</strong>.</p>
+<pre><code># Matlab like Bash history
+&quot;\e[B&quot;: history-search-forward
+&quot;\e[A&quot;: history-search-backward
+
+# Include system wide settings which are ignored
+# by default if one has its own .inputrc
+$include /etc/inputrc
+</code></pre><p><img src="inputrc_content.jpg" alt="Image"></p>
+<p><strong>Afterwards</strong>, we added the following snippet of code at the end of file <strong>.bashrc</strong>.</p>
+<pre><code># Load inputrc
+export INPUTRC=~/.inputrc
+
+# Ignore multiple entries of the same command in history
+export HISTCONTROL=ignoreboth
+</code></pre><p><img src="bashrc_inputrc.jpg" alt="Image"></p>
+<p><strong>Finally</strong>, we will be able to have <strong>Matlab like Bash</strong>. That is to say: if we type in <strong>ls </strong>, and then press <strong>&#x2191;</strong> or <strong>&#x2193;</strong>, we will be able to see all <strong>ls </strong> commands <strong>ONLY</strong>, regardless of all other previous commands.</p>
 
                                 
                                 </section>
@@ -471,12 +479,12 @@
 
             
                 
-                <a href="../01_Getting_Started_with_RaspberryPi/06_package_updateupgrade.html" class="navigation navigation-prev " aria-label="Previous page: 1.6 Package Update & Upgrade">
+                <a href="01_package_management.html" class="navigation navigation-prev " aria-label="Previous page: 2.1 Package Management">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="01_package_management.html" class="navigation navigation-next " aria-label="Next page: 2.1 Package Management">
+                <a href="03_install_packages_from_repository.html" class="navigation navigation-next " aria-label="Next page: 2.3 Install Packages from Repository">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -487,7 +495,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Chapter 2. Getting Familiar with Raspbian","level":"2.3","depth":1,"next":{"title":"2.1 Package Management","level":"2.3.1","depth":2,"path":"Part1_Introduction/02_Getting_Familiar_with_Raspbian/01_package_management.md","ref":"Part1_Introduction/02_Getting_Familiar_with_Raspbian/01_package_management.md","articles":[]},"previous":{"title":"1.6 Package Update & Upgrade","level":"2.2.6","depth":2,"path":"Part1_Introduction/01_Getting_Started_with_RaspberryPi/06_package_updateupgrade.md","ref":"Part1_Introduction/01_Getting_Started_with_RaspberryPi/06_package_updateupgrade.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Part1_Introduction/02_Getting_Familiar_with_Raspbian/README.md","mtime":"2017-08-25T02:17:57.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-08-27T03:46:21.732Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2.2 Matlab Like Bash","level":"2.3.2","depth":2,"next":{"title":"2.3 Install Packages from Repository","level":"2.3.3","depth":2,"path":"Part1_Introduction/02_Getting_Familiar_with_Raspbian/03_install_packages_from_repository.md","ref":"Part1_Introduction/02_Getting_Familiar_with_Raspbian/03_install_packages_from_repository.md","articles":[]},"previous":{"title":"2.1 Package Management","level":"2.3.1","depth":2,"path":"Part1_Introduction/02_Getting_Familiar_with_Raspbian/01_package_management.md","ref":"Part1_Introduction/02_Getting_Familiar_with_Raspbian/01_package_management.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Part1_Introduction/02_Getting_Familiar_with_Raspbian/02_matlab_like_bash.md","mtime":"2017-08-27T01:36:30.373Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-08-27T03:46:21.732Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

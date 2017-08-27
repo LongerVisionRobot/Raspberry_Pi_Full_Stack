@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Chapter 2. Getting Familiar with Raspbian · GitBook</title>
+        <title>2.4 Install Packages from Source · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="01_package_management.html" />
+    <link rel="next" href="../../Part2_GPIO/" />
     
     
-    <link rel="prev" href="../01_Getting_Started_with_RaspberryPi/06_package_updateupgrade.html" />
+    <link rel="prev" href="03_install_packages_from_repository.html" />
     
 
     </head>
@@ -219,7 +219,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.3" data-path="./">
+        <li class="chapter " data-level="2.3" data-path="./">
             
                 <a href="./">
             
@@ -272,7 +272,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.4" data-path="04_install_package_from_source.html">
+        <li class="chapter active" data-level="2.3.4" data-path="04_install_package_from_source.html">
             
                 <a href="04_install_package_from_source.html">
             
@@ -417,7 +417,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >Chapter 2. Getting Familiar with Raspbian</a>
+        <a href="../.." >2.4 Install Packages from Source</a>
     </h1>
 </div>
 
@@ -432,18 +432,15 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="chapter-2---getting-familiar-with-raspbian">Chapter 2 - Getting Familiar with Raspbian</h1>
-<p>Cited from <a href="https://www.raspbian.org/" target="_blank">Raspbian Official Website</a>, </p>
-<blockquote>
-<p>Raspbian is a free operating system based on Debian optimized for the Raspberry Pi hardware. </p>
-</blockquote>
-<p>Namely, <strong>Raspbian</strong> is a Linux distribution specifically for Raspberry Pi.</p>
-<p>To learn more about <strong>Linux</strong>, please refer to other courses of <a href="http://www.longervisionrobot.com" target="_blank">NanJing Longer Vision Robot Technology Ltd.</a>:</p>
+                                <h1 id="24-install-packages-from-source">2.4 Install Packages from Source</h1>
+<h2 id="241-some-cc-packages">2.4.1 Some C/C++ Packages</h2>
+<p>Actually, the author&apos;s most often used packages are:</p>
 <ul>
-<li><a href="http://www.longervisionrobot.com/en/courses/linux-introduction.html" target="_blank">Linux Introduction</a></li>
-<li><a href="http://www.longervisionrobot.com/en/courses/linux-kernel.html" target="_blank">Linux Kernel</a></li>
-<li><a href="http://www.longervisionrobot.com/en/courses/linux-lfs.html" target="_blank">Linux from Scratch</a></li>
+<li><strong>Video Streaming Ones</strong>: <a href="http://ffmpeg.org/" target="_blank"><strong>FFmpeg</strong></a>, <a href="http://www.live555.com/" target="_blank"><strong>live555</strong></a>, <a href="https://www.videolan.org/index.html" target="_blank"><strong>VLC</strong></a>, <a href="https://gstreamer.freedesktop.org/" target="_blank"><strong>gstreamer</strong></a>, etc.</li>
+<li><strong>Computer Vision Ones</strong>: <a href="http://opencv.org/" target="_blank"><strong>OpenCV</strong></a>, <a href="http://pointclouds.org/" target="_blank"><strong>PCL</strong></a>, <a href="https://structure.io/openni" target="_blank"><strong>OpenNI</strong></a>, <a href="http://openni.ru/files/nite/index.html" target="_blank">**NiTE</a>, etc.</li>
+<li><strong>Robotics</strong>: </li>
 </ul>
+<h2 id="243-some-python-packages">2.4.3 Some Python Packages</h2>
 
                                 
                                 </section>
@@ -471,12 +468,12 @@
 
             
                 
-                <a href="../01_Getting_Started_with_RaspberryPi/06_package_updateupgrade.html" class="navigation navigation-prev " aria-label="Previous page: 1.6 Package Update & Upgrade">
+                <a href="03_install_packages_from_repository.html" class="navigation navigation-prev " aria-label="Previous page: 2.3 Install Packages from Repository">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="01_package_management.html" class="navigation navigation-next " aria-label="Next page: 2.1 Package Management">
+                <a href="../../Part2_GPIO/" class="navigation navigation-next " aria-label="Next page: Part 2 - GPIO">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -487,7 +484,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Chapter 2. Getting Familiar with Raspbian","level":"2.3","depth":1,"next":{"title":"2.1 Package Management","level":"2.3.1","depth":2,"path":"Part1_Introduction/02_Getting_Familiar_with_Raspbian/01_package_management.md","ref":"Part1_Introduction/02_Getting_Familiar_with_Raspbian/01_package_management.md","articles":[]},"previous":{"title":"1.6 Package Update & Upgrade","level":"2.2.6","depth":2,"path":"Part1_Introduction/01_Getting_Started_with_RaspberryPi/06_package_updateupgrade.md","ref":"Part1_Introduction/01_Getting_Started_with_RaspberryPi/06_package_updateupgrade.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Part1_Introduction/02_Getting_Familiar_with_Raspbian/README.md","mtime":"2017-08-25T02:17:57.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-08-27T03:46:21.732Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2.4 Install Packages from Source","level":"2.3.4","depth":2,"next":{"title":"Part 2 - GPIO","level":"2.4","depth":1,"path":"Part2_GPIO/README.md","ref":"Part2_GPIO/README.md","articles":[]},"previous":{"title":"2.3 Install Packages from Repository","level":"2.3.3","depth":2,"path":"Part1_Introduction/02_Getting_Familiar_with_Raspbian/03_install_packages_from_repository.md","ref":"Part1_Introduction/02_Getting_Familiar_with_Raspbian/03_install_packages_from_repository.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Part1_Introduction/02_Getting_Familiar_with_Raspbian/04_install_package_from_source.md","mtime":"2017-08-27T03:46:11.279Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-08-27T03:46:21.732Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

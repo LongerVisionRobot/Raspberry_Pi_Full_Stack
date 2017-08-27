@@ -58,3 +58,15 @@ Click on **Help** then **About**, you will be able to see the following **About 
 
 ## 2.1.4 Change Repositories
 
+[**Repository**](https://en.wikipedia.org/wiki/Software_repository) is where to store system-compatible software packages. Since there are a lot of mirrors over the world, some are just inside your country, some are closer to you, and some are just down without response, so that when you download software packages,you will notice an obvious speed difference by choosing different repositories. Those reasons are **WHY** some times we prefer specifying a **STABLE** and **FASTER** repository. Often, the repository to be selected is **CLOSER** to where the Raspberry Pi is.
+
+* By **Synaptic**
+Open **Synaptic**, then click on **Settings**, you will be able to see the submenu named **Repositories**. Click on it, and you will see the current existing and ticked repository URLs.
+
+![Image](./synaptic_repository.jpg)
+
+You can of course **NEW** some repositories, which you can find by **GOOGLE**. For **NOW**, just remember what have been ticked, and compare them to the content in file **/etc/apt/sources.list** and directory **/etc/apt/sources.list.d/**.
+
+![Image](./apt_sources.jpg)
+
+Clearly, **Synaptic Repositories** just contains exactly the **SAME** content as in file **/etc/apt/sources.list** and the files under directory **/etc/apt/sources.list.d/**.
