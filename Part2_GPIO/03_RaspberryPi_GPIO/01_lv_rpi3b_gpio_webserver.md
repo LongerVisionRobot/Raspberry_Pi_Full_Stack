@@ -10,6 +10,11 @@ git clone git@github.com:LongerVision/RaspberryPi.git
 
 ![Image](./gitclone_lv_gpioserver.jpg)
 
-and then run the server from terminal with specified IP address (Raspberry Pi 3B's IP) and an randomly specified unused port number.
+To run this code, you will need **python3-rpi.gpio**, 
+run the server from terminal with specified IP address (Raspberry Pi 3B's IP) and an randomly specified unused port number.
 
 ![Image](./gpioserver.jpg)
+
+And then, we can interact with the server from a webbrowser by specifying Raspberry Pi 3B's IP with the specified port number, as follows:
+
+![Image](./rpi3b_gpio_control.jpg)

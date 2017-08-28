@@ -18,7 +18,7 @@
     * [2.4 Install Packages from Source](Part1_Introduction/02_Getting_Familiar_with_Raspbian/04_install_package_from_source.md)
 
 * [Part 2 - GPIO](Part2_GPIO/README.md)
-3. [Chapter 3. GPIO](Part2_GPIO/03_RaspberryPi_GPIO/README.md)
+3. [Chapter 3. GPRaspberry Pi GPIO](Part2_GPIO/03_RaspberryPi_GPIO/README.md)
     * [3.1 GPIO Web Server](Part2_GPIO/03_RaspberryPi_GPIO/01_lv_rpi3b_gpio_webserver.md)
 
 * [Part 3 - Pi Camera](Part3_PiCam/README.md)
