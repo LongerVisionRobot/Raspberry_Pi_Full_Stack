@@ -25,7 +25,9 @@ Default python on Raspbian is of version 2. Clearly, the symbolic link **/usr/bi
 
 ![Image](./python3_symbolic_link.jpg)
 
-Here, we are going to install some python packages, including **scipy**, **numpy**, **matplotlib**, **pandas**, **sklearn**, **skimage**, etc., via **Synaptic Package Manager**.
+Here, we are going to install some python packages, including **scipy**, **numpy**, **matplotlib**, **pandas**, **sklearn**, **skimage**, etc., via **Synaptic Package Manager**. 
+
+**NOTE**: It seems **numpy** has alreadly been installed by default after Raspbian installation.
 
 ![Image](./install_python_packages_synaptic.jpg)
 

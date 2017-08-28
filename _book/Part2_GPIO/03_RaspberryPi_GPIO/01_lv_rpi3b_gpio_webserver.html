@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>3.2 GPIO Web Server · GitBook</title>
+        <title>3.1 GPIO Web Server · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -60,7 +60,7 @@
     <link rel="next" href="../../Part3_PiCam/" />
     
     
-    <link rel="prev" href="01_introduction.html" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -317,25 +317,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.5.1" data-path="01_introduction.html">
+        <li class="chapter active" data-level="2.5.1" data-path="01_lv_rpi3b_gpio_webserver.html">
             
-                <a href="01_introduction.html">
-            
-                    
-                    3.1 Introduction
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter active" data-level="2.5.2" data-path="02_lv_rpi3b_gpio_webserver.html">
-            
-                <a href="02_lv_rpi3b_gpio_webserver.html">
+                <a href="01_lv_rpi3b_gpio_webserver.html">
             
                     
-                    3.2 GPIO Web Server
+                    3.1 GPIO Web Server
             
                 </a>
             
@@ -417,7 +404,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >3.2 GPIO Web Server</a>
+        <a href="../.." >3.1 GPIO Web Server</a>
     </h1>
 </div>
 
@@ -432,11 +419,14 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="32-gpio-web-server">3.2 GPIO Web Server</h1>
-<p>How to successfully git clone some packages from github.com has been talked about in detail in Longer Vision Roboti</p>
-<p>Adding a new SSH key to your GitHub account</p>
+                                <h1 id="31-gpio-web-server">3.1 GPIO Web Server</h1>
+<p><a href="http://www.longervisionrobot.com/en/index.html" target="_blank">Longer Vision Robotics</a> provides its own code to test Raspberry Pi 3B&apos;s GPIOs. The backend server is written in <strong>Python</strong>, while the frontend interface is written in <strong>javascript</strong>.</p>
+<p>Let&apos;s check out the source code first:</p>
 <pre><code>git clone git@github.com:LongerVision/RaspberryPi.git
-</code></pre>
+</code></pre><p><img src="gitclone_lv_gpioserver.jpg" alt="Image"></p>
+<p>and then run the server from terminal with specified IP address (Raspberry Pi 3B&apos;s IP) and an randomly specified unused port number.</p>
+<p><img src="gpioserver.jpg" alt="Image"></p>
+
                                 
                                 </section>
                             
@@ -463,7 +453,7 @@
 
             
                 
-                <a href="01_introduction.html" class="navigation navigation-prev " aria-label="Previous page: 3.1 Introduction">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Chapter 3. GPIO">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -479,7 +469,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3.2 GPIO Web Server","level":"2.5.2","depth":2,"next":{"title":"Part 3 - Pi Camera","level":"2.6","depth":1,"path":"Part3_PiCam/README.md","ref":"Part3_PiCam/README.md","articles":[]},"previous":{"title":"3.1 Introduction","level":"2.5.1","depth":2,"path":"Part2_GPIO/03_RaspberryPi_GPIO/01_introduction.md","ref":"Part2_GPIO/03_RaspberryPi_GPIO/01_introduction.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Part2_GPIO/03_RaspberryPi_GPIO/02_lv_rpi3b_gpio_webserver.md","mtime":"2017-08-27T04:28:25.457Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-08-27T09:56:00.755Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3.1 GPIO Web Server","level":"2.5.1","depth":2,"next":{"title":"Part 3 - Pi Camera","level":"2.6","depth":1,"path":"Part3_PiCam/README.md","ref":"Part3_PiCam/README.md","articles":[]},"previous":{"title":"Chapter 3. GPIO","level":"2.5","depth":1,"path":"Part2_GPIO/03_RaspberryPi_GPIO/README.md","ref":"Part2_GPIO/03_RaspberryPi_GPIO/README.md","articles":[{"title":"3.1 GPIO Web Server","level":"2.5.1","depth":2,"path":"Part2_GPIO/03_RaspberryPi_GPIO/01_lv_rpi3b_gpio_webserver.md","ref":"Part2_GPIO/03_RaspberryPi_GPIO/01_lv_rpi3b_gpio_webserver.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Part2_GPIO/03_RaspberryPi_GPIO/01_lv_rpi3b_gpio_webserver.md","mtime":"2017-08-28T03:13:41.993Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-08-28T03:13:47.324Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

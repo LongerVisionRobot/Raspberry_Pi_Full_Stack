@@ -317,25 +317,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.5.1" data-path="../../Part2_GPIO/03_RaspberryPi_GPIO/01_introduction.html">
+        <li class="chapter " data-level="2.5.1" data-path="../../Part2_GPIO/03_RaspberryPi_GPIO/01_lv_rpi3b_gpio_webserver.html">
             
-                <a href="../../Part2_GPIO/03_RaspberryPi_GPIO/01_introduction.html">
-            
-                    
-                    3.1 Introduction
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.5.2" data-path="../../Part2_GPIO/03_RaspberryPi_GPIO/02_lv_rpi3b_gpio_webserver.html">
-            
-                <a href="../../Part2_GPIO/03_RaspberryPi_GPIO/02_lv_rpi3b_gpio_webserver.html">
+                <a href="../../Part2_GPIO/03_RaspberryPi_GPIO/01_lv_rpi3b_gpio_webserver.html">
             
                     
-                    3.2 GPIO Web Server
+                    3.1 GPIO Web Server
             
                 </a>
             
@@ -447,9 +434,16 @@
 <p><a href="https://www.continuum.io/" target="_blank">Anaconda Python</a> <a href="https://conda.io/docs/user-guide/tasks/manage-environments.html" target="_blank">Virtual Environment</a> is strongly recommended as the Python working environment. In fact, we&apos;ve got a course <a href="http://www.longervisionrobot.com/en/courses/pl-python.html" target="_blank">Anaconda Python</a> focusing on Python language programming under Anaconda virtual environment. Here in this course, we ignore Anaconda Python but <strong>ONLY</strong> work without a virtual environment.</p>
 <p>To install a python package, in general, there are 3 ways:</p>
 <ul>
-<li>install the package directly from repository</li>
-<li>install the package directly through</li>
-<li>install the package from source</li>
+<li>install the package directly from <strong>Synaptic Package Manager</strong></li>
+<li>install the package by <code>pip install</code>. <blockquote>
+<p><strong>Pip</strong> is used to support the use of Python in cloud web hosting, such as by Heroku.(Cited from <a href="https://en.wikipedia.org/wiki/Pip_(package_manager" target="_blank">Wikipedia</a>) )</p>
+<ul>
+<li><code>pip install packagename</code></li>
+<li><code>pip install git+git://github.com/xxxxx/packagename.git</code></li>
+</ul>
+</blockquote>
+</li>
+<li>install the package from source. From within the source directory, run command line <code>python setup.py install</code>.</li>
 </ul>
 
                                 
@@ -494,7 +488,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"2.4 Install Packages from Source","level":"2.3.4","depth":2,"next":{"title":"Part 2 - GPIO","level":"2.4","depth":1,"path":"Part2_GPIO/README.md","ref":"Part2_GPIO/README.md","articles":[]},"previous":{"title":"2.3 Install Packages from Repository","level":"2.3.3","depth":2,"path":"Part1_Introduction/02_Getting_Familiar_with_Raspbian/03_install_packages_from_repository.md","ref":"Part1_Introduction/02_Getting_Familiar_with_Raspbian/03_install_packages_from_repository.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Part1_Introduction/02_Getting_Familiar_with_Raspbian/04_install_package_from_source.md","mtime":"2017-08-27T09:26:57.569Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-08-27T09:56:00.755Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2.4 Install Packages from Source","level":"2.3.4","depth":2,"next":{"title":"Part 2 - GPIO","level":"2.4","depth":1,"path":"Part2_GPIO/README.md","ref":"Part2_GPIO/README.md","articles":[]},"previous":{"title":"2.3 Install Packages from Repository","level":"2.3.3","depth":2,"path":"Part1_Introduction/02_Getting_Familiar_with_Raspbian/03_install_packages_from_repository.md","ref":"Part1_Introduction/02_Getting_Familiar_with_Raspbian/03_install_packages_from_repository.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Part1_Introduction/02_Getting_Familiar_with_Raspbian/04_install_package_from_source.md","mtime":"2017-08-27T20:09:24.302Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-08-28T03:13:47.324Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

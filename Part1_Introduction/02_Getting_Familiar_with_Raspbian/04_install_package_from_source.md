@@ -19,6 +19,9 @@ Actually, the author's most often used packages are:
 [Anaconda Python](https://www.continuum.io/) [Virtual Environment](https://conda.io/docs/user-guide/tasks/manage-environments.html) is strongly recommended as the Python working environment. In fact, we've got a course [Anaconda Python](http://www.longervisionrobot.com/en/courses/pl-python.html) focusing on Python language programming under Anaconda virtual environment. Here in this course, we ignore Anaconda Python but **ONLY** work without a virtual environment.
 
 To install a python package, in general, there are 3 ways:
-* install the package directly from repository
-* install the package directly through
-* install the package from source
+* install the package directly from **Synaptic Package Manager**
+* install the package by ```pip install```. 
+>**Pip** is used to support the use of Python in cloud web hosting, such as by Heroku.(Cited from [Wikipedia](https://en.wikipedia.org/wiki/Pip_(package_manager)) )
+    - ```pip install packagename```
+    - ```pip install git+git://github.com/xxxxx/packagename.git```
+* install the package from source. From within the source directory, run command line ```python setup.py install```.
