@@ -1,6 +1,6 @@
 # 1.3 Install Raspbian onto Raspberry Pi
 
-The version that we are using when writing **Raspberry Pi Full Stack** is [Raspbian Stretch](https://www.raspberrypi.org/downloads/raspbian/), which is release on August 16, 2017.
+The version that we are using when writing **Raspberry Pi Full Stack** is [Raspbian Stretch](https://www.raspberrypi.org/downloads/raspbian/), which is release on September 7th, 2017.
 
 Details about how to install Raspbian onto a Raspberry Pi can be found on its official website:[https://www.raspberrypi.org/documentation/installation/installing-images/linux.md](https://www.raspberrypi.org/documentation/installation/installing-images/linux.md).
 
@@ -8,7 +8,7 @@ Details about how to install Raspbian onto a Raspberry Pi can be found on its of
 In short, **ONLY** one command will do the installation on a SD/TF card:
 
 ```
-sudo dd bs=4M if=2017-08-16-raspbian-stretch.img of=/dev/mmcblk0 status=progress conv=fsync
+sudo dd bs=4M if=2017-09-07-raspbian-stretch.img of=/dev/mmcblk0 status=progress conv=fsync
 ```
 
 After the installation, you will see the SD/TF card is formated as in the following image (here, we use [GParted](http://gparted.org/) as the partition tool):
