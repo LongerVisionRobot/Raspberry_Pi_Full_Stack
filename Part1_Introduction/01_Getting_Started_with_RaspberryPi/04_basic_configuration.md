@@ -68,6 +68,8 @@ A correct Keyboard Layout also needs to be correctly configured. Specifically fo
 
 ![Image](./raspi-config_keyboard_5.jpg)
 
+![Image](./raspi-config_keyboard_6.jpg)
+
 Then, press **OK** again, and we fill finish the system keyboard layout settings.
 
 * **Wi-fi Country**
