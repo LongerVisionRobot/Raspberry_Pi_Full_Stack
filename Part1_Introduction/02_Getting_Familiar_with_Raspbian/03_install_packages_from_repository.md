@@ -2,7 +2,7 @@
 
 ## 2.3.1 Packages About C/C++ Compilation
 
-Some uninstalled packages about C/C++ compilation are installed in advance.
+Some uninstalled packages about C/C++ compilation are to be installed in advance.
 
 ```
 sudo apt install libtool autoconf automake cmake cmake-curses-gui
