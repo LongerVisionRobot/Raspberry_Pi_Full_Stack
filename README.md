@@ -8,7 +8,7 @@
 * Pi CAM
 * And our target of this book is to finally build a Raspberry Pi based race car, namely, an Mini-size Autonomous Vehicle with selected sensors.
 
-The book is put on gitbook at: [https://longervision.gitbooks.io/raspberry-pi-full-stack/](https://longervision.gitbooks.io/raspberry-pi-full-stack/), and all source code is tested and put on github at: [https://github.com/LongerVision/RaspberryPi](https://github.com/LongerVision/RaspberryPi) .
+The book is put on gitbook at: [https://longer-vision-robot.gitbooks.io/raspberry-pi-full-stack/](https://longer-vision-robot.gitbooks.io/raspberry-pi-full-stack/), and all source code is tested and put on github at: [https://github.com/LongerVisionRobot/RaspberryPi](https://github.com/LongerVisionRobot/RaspberryPi) .
 
 
 All the existing online resource is licensed as it is. And all the content designed by [NanJing Longer Vision Robot Technology Ltd.](http://www.longervisionrobot.com) are reserved to [NanJing Longer Vision Robot Technology Ltd.](http://www.longervisionrobot.com). The customers/students are allowed to learn from the content, to download the code and book, to modify the code, and even release the code without changing the license.
