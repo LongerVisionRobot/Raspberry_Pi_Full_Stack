@@ -5,7 +5,7 @@ Cited from [Raspbian Official Website](https://www.raspbian.org/),
 
 Namely, **Raspbian** is a Linux distribution specifically for Raspberry Pi.
 
-To learn more about **Linux**, please refer to other courses of [NanJing Longer Vision Robot Technology Ltd.](http://www.longervisionrobot.com):
+To learn more about **Linux**, please refer to other courses of [Longer Vision Robot](http://www.longervisionrobot.com):
 * [Linux Introduction](http://www.longervisionrobot.com/en/courses/linux-introduction.html)
 * [Linux Kernel](http://www.longervisionrobot.com/en/courses/linux-kernel.html)
 * [Linux from Scratch](http://www.longervisionrobot.com/en/courses/linux-lfs.html)
