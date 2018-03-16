@@ -1,0 +1,609 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.5 Network Configuration · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="06_package_updateupgrade.html" />
+    
+    
+    <link rel="prev" href="04_basic_configuration.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Part 1 - Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Chapter 1. Getting Started with Raspberry Pi
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="01_raspberry_pi_3b.html">
+            
+                <a href="01_raspberry_pi_3b.html">
+            
+                    
+                    1.1 About Raspberry Pi 3B
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="02_onlineresource.html">
+            
+                <a href="02_onlineresource.html">
+            
+                    
+                    1.2 Raspberry Pi Online Resource
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="03_raspbian_installation.html">
+            
+                <a href="03_raspbian_installation.html">
+            
+                    
+                    1.3 Install Raspbian onto a Raspberry Pi 3B
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="04_basic_configuration.html">
+            
+                <a href="04_basic_configuration.html">
+            
+                    
+                    1.4 Raspberry Pi Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2.5" data-path="05_network_configuration.html">
+            
+                <a href="05_network_configuration.html">
+            
+                    
+                    1.5 Network Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="06_package_updateupgrade.html">
+            
+                <a href="06_package_updateupgrade.html">
+            
+                    
+                    1.6 Package Update & Upgrade
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../02_Getting_Familiar_with_Raspbian/">
+            
+                <a href="../02_Getting_Familiar_with_Raspbian/">
+            
+                    
+                    Chapter 2. Getting Familiar with Raspbian
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../02_Getting_Familiar_with_Raspbian/01_package_management.html">
+            
+                <a href="../02_Getting_Familiar_with_Raspbian/01_package_management.html">
+            
+                    
+                    2.1 Package Management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../02_Getting_Familiar_with_Raspbian/02_matlab_like_bash.html">
+            
+                <a href="../02_Getting_Familiar_with_Raspbian/02_matlab_like_bash.html">
+            
+                    
+                    2.2 Matlab Like Bash
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../02_Getting_Familiar_with_Raspbian/03_install_packages_from_repository.html">
+            
+                <a href="../02_Getting_Familiar_with_Raspbian/03_install_packages_from_repository.html">
+            
+                    
+                    2.3 Install Packages from Repository
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="../02_Getting_Familiar_with_Raspbian/04_install_package_from_source.html">
+            
+                <a href="../02_Getting_Familiar_with_Raspbian/04_install_package_from_source.html">
+            
+                    
+                    2.4 Install Packages from Source
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../Part2_GPIO/">
+            
+                <a href="../../Part2_GPIO/">
+            
+                    
+                    Part 2 - GPIO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../../Part2_GPIO/03_RaspberryPi_GPIO/">
+            
+                <a href="../../Part2_GPIO/03_RaspberryPi_GPIO/">
+            
+                    
+                    Chapter 3. Raspberry Pi GPIO
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../../Part2_GPIO/03_RaspberryPi_GPIO/01_lv_rpi3b_gpio_webserver.html">
+            
+                <a href="../../Part2_GPIO/03_RaspberryPi_GPIO/01_lv_rpi3b_gpio_webserver.html">
+            
+                    
+                    3.1 GPIO Web Server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="../../Part2_GPIO/03_RaspberryPi_GPIO/02_gpio_pin_test.html">
+            
+                <a href="../../Part2_GPIO/03_RaspberryPi_GPIO/02_gpio_pin_test.html">
+            
+                    
+                    3.2 GPIO Pin Test
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../../Part3_PiCam/">
+            
+                <a href="../../Part3_PiCam/">
+            
+                    
+                    Part 3 - Pi Camera
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../../Part3_PiCam/04_picamera/">
+            
+                <a href="../../Part3_PiCam/04_picamera/">
+            
+                    
+                    Chapter 4. Pi Camera
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../../Part4/">
+            
+                <a href="../../Part4/">
+            
+                    
+                    Part 4 - Raspberry Pi Based Mini Automated Vehicle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >1.5 Network Configuration</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="15-network-configuration">1.5 Network Configuration</h1>
+<p>So far, we are <strong>NOT</strong> able to surf the Internet yet. In this chapter, we are going to enable our Internet by configuring network settings, and then set up a static IP address for your Raspberry Pi.</p>
+<h2 id="151-connect-to-internet">1.5.1 Connect to Internet</h2>
+<p>Command</p>
+<pre><code>ifconfig
+</code></pre><p>shows the current network configuration.</p>
+<p><img src="network_1_ifconfig.jpg" alt="Image"></p>
+<p>Obviously, there is <strong>NO</strong> Internet yet, as indicated on the top-right corner.</p>
+<p><img src="network_2_internet_not_connected.jpg" alt="Image"></p>
+<p>And, by clicking on the <strong>Wifi</strong> icon, it will open a list of detected <strong>Wifi</strong> networks:</p>
+<p><img src="network_3_internet_listing.jpg" alt="Image"></p>
+<p>You will notice that Raspberry Pi 3B <strong>ONLY</strong> detects the 2.4G Wifi network, which can be confirmed from its <a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b/" target="_blank">official specification</a>. Clearly, <a href="http://www.cypress.com/file/298076/download" target="_blank">BCM43438</a> is the chip with </p>
+<blockquote>
+<p>a 2.4 GHz WLAN IEEE 802.11 b/g/n MAC/baseband/radio, Bluetooth 4.1 support, and an FM receiver.</p>
+</blockquote>
+<p>Click on your network, the <strong>Pre Shared Key</strong> dialog will be popped up for you to input the password, as follows:</p>
+<p><img src="network_4_internet_pre_sharedkey.jpg" alt="Image"></p>
+<p>After inputing the correct password to your <strong>Wifi</strong>, you will see the Internet is NOW connected:</p>
+<p><img src="network_5_internet_connected_1.jpg" alt="Image"></p>
+<p>Move your mouse to the <strong>Wifi</strong> icon, you will see the network information about <strong>wlan0</strong>.</p>
+<p><img src="network_6_internet_connected_2.jpg" alt="Image"></p>
+<p>Now, let&apos;s have a look at the network configuration by command</p>
+<pre><code>ifconfig
+</code></pre><p>again.</p>
+<p><img src="network_7_ifconfig.jpg" alt="Image"></p>
+<p>As you can see, the IP address is NOW automatically allocated as <strong>192.168.0.105</strong>.</p>
+<h2 id="152-set-static-ip-optional-but-strongly-recommended">1.5.2 Set Static IP (Optional but Strongly Recommended)</h2>
+<p>In order to be more easily and accurately locate which device is of which IP address, without shifting to a <strong>NEW</strong> IP address while reconnecting to the <strong>SAME</strong> network, users would like to set static IPs for frequently-used devices.</p>
+<p>There are at least three ways to set up a static IP for Raspberry Pi 3B.</p>
+<p><strong>I. Router</strong></p>
+<p>Specifically for ther author&apos;s Cisco router, there is a place to specify <strong>Pre-assigned DHCP IP Address</strong>.</p>
+<p><img src="router_configure_1.jpg" alt="Image"></p>
+<p>After this <strong>Pre-assigned DHCP IP Address</strong> dialog is opened, we <strong>Add Static IP</strong>, then <strong>Save</strong>. Finally, we will be able to see the <strong>Success</strong> dialog.</p>
+<p><img src="router_configure_2.jpg" alt="Image"></p>
+<p><img src="router_configure_3.jpg" alt="Image"></p>
+<p><img src="router_configure_4.jpg" alt="Image"></p>
+<p>After the static IP configuration from within the router, we reconnect(disconnect first and then connect again) Raspberry Pi 3B to Internet, we&apos;ll be able to see the IP address has already changed accordingly.</p>
+<p>However, to think of one additional issue? If the router is rebooted for some reason, all pre-assigned IP will be forgot by the router, what are you going to do?</p>
+<p>Yes. The answer is: do some configuration on the Raspberry Pi 3B, instead of router.</p>
+<p><strong>II. Configure /etc/dhcpcd.conf</strong></p>
+<p>Refer to <strong>ModMyPi</strong> online blog <a href="https://www.modmypi.com/blog/how-to-give-your-raspberry-pi-a-static-ip-address-update" target="_blank">How to give your Raspberry Pi a Static IP Address - UPDATE</a></p>
+<p><strong>/etc/dhcpcd.conf</strong> is supposed to be configured as:</p>
+<pre><code>interface eth0
+static ip_address=192.168.0.31/24
+static routers=192.168.0.1
+static domain_name_servers=192.168.0.1 8.8.8.8
+
+interface wlan0
+static ip_address=192.168.0.30/24
+static routers=192.168.0.1
+static domain_name_servers=192.168.0.1 8.8.8.8
+</code></pre><p><strong>III. Configure /etc/network/interfaces and /etc/wpa_supplicant/wpa_supplicant.conf</strong></p>
+<p>Refer to <strong>ModMyPi</strong> online tutorial <a href="https://www.modmypi.com/blog/tutorial-how-to-give-your-raspberry-pi-a-static-ip-address" target="_blank">Tutorial - How to give your Raspberry Pi a Static IP Address</a></p>
+<p>For <strong>/etc/network/interfaces</strong>, the following snippet of code is to be added at the bottom:</p>
+<pre><code>auto eth0
+iface eth0 inet static
+    address 192.168.0.31
+    netmask 255.255.255.0
+    gateway 192.168.0.1
+
+allow-hotplug wlan0
+iface wlan0 inet static
+    address 192.168.0.30
+    netmask 255.255.255.0
+    gateway 192.168.0.1
+wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+</code></pre><p>For <strong>/etc/wpa_supplicant/wpa_supplicant.conf</strong>, the default network is needed to configure as follows:</p>
+<pre><code>ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=CA
+
+network={
+    ssid=&quot;Wifi Network SSID&quot;
+    psk=&quot;Password Phrase&quot;
+    key_mgmt=WPA-PSK
+}
+</code></pre><p>respectively.</p>
+<p>A lot more discussion can be found in Raspberry Pi Official Forum, topic title 
+<a href="https://www.raspberrypi.org/forums/viewtopic.php?f=91&amp;t=157250" target="_blank">Raspberry Pi 3 Wifi Static IP</a>.</p>
+<p>Here in our case, <strong>/etc/network/interfaces</strong> and <strong>/etc/wpa_supplicant/wpa_supplicant.conf</strong> are modified accordingly, while <strong>/etc/dhcpcd.conf</strong> is left as it is.</p>
+<p>After the network is configured, <code>ifconfig</code> brings a <strong>NEW</strong> IP address: <strong>192.168.0.30</strong>.</p>
+<p><img src="network_8_ifconfig.jpg" alt="Image"></p>
+<p><strong>What&apos;s WEIRD</strong></p>
+<p><strong>Two weird things</strong> are:</p>
+<ol>
+<li><p>If <strong>/etc/dhcpcd.conf</strong> is configured, <strong>Raspberry Pi 3B</strong> with <strong>Raspbian Stretch</strong> <strong>CANNOT</strong> connect to the Internet any longer.</p>
+</li>
+<li><p>If <strong>/etc/network/interfaces</strong> and <strong>/etc/wpa_supplicant/wpa_supplicant.conf</strong> are configured, <strong>Raspberry Pi 3B</strong> with <strong>Raspbian Stretch</strong> is <strong>ABLE</strong> to connect to the Internet, but with the top right corner <strong>Wifi sign</strong> as <strong>Unconnected</strong> or <strong>Disconnected</strong>:</p>
+</li>
+</ol>
+<p><img src="network_9_ping_unconnected.jpg" alt="Image"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="04_basic_configuration.html" class="navigation navigation-prev " aria-label="Previous page: 1.4 Raspberry Pi Configuration">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="06_package_updateupgrade.html" class="navigation navigation-next " aria-label="Next page: 1.6 Package Update & Upgrade">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.5 Network Configuration","level":"2.2.5","depth":2,"next":{"title":"1.6 Package Update & Upgrade","level":"2.2.6","depth":2,"path":"Part1_Introduction/01_Getting_Started_with_RaspberryPi/06_package_updateupgrade.md","ref":"Part1_Introduction/01_Getting_Started_with_RaspberryPi/06_package_updateupgrade.md","articles":[]},"previous":{"title":"1.4 Raspberry Pi Configuration","level":"2.2.4","depth":2,"path":"Part1_Introduction/01_Getting_Started_with_RaspberryPi/04_basic_configuration.md","ref":"Part1_Introduction/01_Getting_Started_with_RaspberryPi/04_basic_configuration.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Part1_Introduction/01_Getting_Started_with_RaspberryPi/05_network_configuration.md","mtime":"2018-03-04T02:00:33.303Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-05T04:14:58.389Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
